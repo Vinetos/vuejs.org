@@ -4,20 +4,18 @@ type: cookbook
 order: 8
 ---
 
-<p>Cette page est en cours de traduction. Pour nous aider, vous pouvez participer sur <a href="https://github.com/vuejs-fr/vuejs.org" target="_blank">le dépôt GitHub dédié de Vuejs-FR</a>.</p><p>Every application reaches a point where it's necessary to understand failures, small to large. In this recipe, we explore a few workflows for VS Code users who would like to debug their application in the browser.</p>
+Cette recette montre comment déboguer des appplications [Vue CLI](https://github.com/vuejs/vue-cli) dans VS Code lors de leur exécution dans le navigateur.
 
-This recipe shows how to debug [Vue CLI](https://github.com/vuejs/vue-cli) applications in VS Code as they run in the browser.
+<p class="tip">Note: Cette recette couvre Chrome et Firefox. Si vous savez comment configurer VS Code pour déboguer avec d'autre navigateur, faites partager votre savoir en contribuant (voir le bas de la page).</p>
 
-<p class="tip">Note: This recipe covers Chrome and Firefox. If you know how to setup VS Code debugging with other browsers, please consider sharing your insights (see bottom of the page).</p>
+## Prérequis
 
-## Prerequisites
+Assurez-vous que VS Code et le navigateur de votre choix sont installés, ainsi que la dernière version de l'extension Debugger correspondante installée et activée :
 
-Make sure you have VS Code and the browser of your choice installed, and the latest version of the corresponding Debugger extension installed and enabled:
+* [Debugger pour Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+* [Debugger pour Firefox](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-firefox-debug)
 
-* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
-* [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-firefox-debug)
-
-Install and create a project with the [vue-cli](https://github.com/vuejs/vue-cli), following the instructions in the [Vue CLI Guide](https://cli.vuejs.org/). Change into the newly created application directory and open VS Code.
+Installez et créez [vue-cli](https://github.com/vuejs/vue-cli), en suivant les instructions du [Guide Vue CLI](https://cli.vuejs.org/). Accédez au répertoire de l'application nouvellement créé et ouvrez VS Code.
 
 ### Displaying Source Code in the Browser
 
